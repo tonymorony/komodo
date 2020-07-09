@@ -4,7 +4,7 @@
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 /******************************************************************************
- * Copyright © 2014-2019 The SuperNET Developers.                             *
+ * Copyright © 2014-2020 The SuperNET Developers.                             *
  *                                                                            *
  * See the AUTHORS, DEVELOPER-AGREEMENT and LICENSE files at                  *
  * the top-level directory of this distribution for the individual copyright  *
@@ -70,11 +70,11 @@ void CTimeWarning::Warn(size_t peersAhead, size_t peersBehind)
 {
     std::string strMessage;
     if (peersBehind >= TIMEDATA_WARNING_MAJORITY) {
-        strMessage = _("Warning: Your computer's date and time may be ahead of the rest of the network! If your clock is wrong Zcash will not work properly.");
+        strMessage = _("Warning: Your computer's date and time may be ahead of the rest of the network! If your clock is wrong Komodo will not work properly.");
     } else if (peersAhead >= TIMEDATA_WARNING_MAJORITY) {
-        strMessage = _("Warning: Your computer's date and time may be behind the rest of the network! If your clock is wrong Zcash will not work properly.");
+        strMessage = _("Warning: Your computer's date and time may be behind the rest of the network! If your clock is wrong Komodo will not work properly.");
             } else {
-        strMessage = _("Warning: Please check that your computer's date and time are correct! If your clock is wrong Zcash will not work properly.");
+        strMessage = _("Warning: Please check that your computer's date and time are correct! If your clock is wrong Komodo will not work properly.");
     }
     LogPrintf("*** %s\n", strMessage);
     uiInterface.ThreadSafeMessageBox(strMessage, "", CClientUIInterface::MSG_WARNING);
