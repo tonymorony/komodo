@@ -3,7 +3,7 @@
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 /******************************************************************************
- * Copyright © 2014-2019 The SuperNET Developers.                             *
+ * Copyright © 2014-2020 The SuperNET Developers.                             *
  *                                                                            *
  * See the AUTHORS, DEVELOPER-AGREEMENT and LICENSE files at                  *
  * the top-level directory of this distribution for the individual copyright  *
@@ -162,7 +162,7 @@ UniValue importprivkey(const UniValue& params, bool fHelp, const CPubKey& mypk)
             "2. \"label\"            (string, optional, default=\"\") An optional label\n"
             "3. rescan               (boolean, optional, default=true) Rescan the wallet for transactions\n"
             "4. height               (integer, optional, default=0) start at block height?\n"
-            "5. secret_key           (integer, optional, default=188) used to import WIFs of other coins\n" 
+            "5. secret_key           (integer, optional, default=188) decimal value used to import WIFs of other coins\n" 
             "\nNote: This call can take minutes to complete if rescan is true.\n"
             "\nExamples:\n"
             "\nDump a private key\n"
